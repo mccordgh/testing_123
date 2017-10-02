@@ -44,8 +44,20 @@
       </sprites>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_tiles</background>
+  </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <objects name="colliders">
+      <object>objects\object_solid_parent_collider</object>
+      <object>objects\object_water</object>
+    </objects>
+    <object>objects\object_player</object>
+    <object>objects\object_castle</object>
+    <object>objects\object_portal</object>
+    <object>objects\object_monster</object>
+  </objects>
   <rooms name="rooms">
     <room>rooms\room_world</room>
   </rooms>

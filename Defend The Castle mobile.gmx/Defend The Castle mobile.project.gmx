@@ -43,20 +43,50 @@
         <sprite>sprites\sprite_bat_die</sprite>
       </sprites>
     </sprites>
+    <sprites name="Game Helpers">
+      <sprite>sprites\sprite_game_manager</sprite>
+      <sprite>sprites\sprite_input_manager</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tiles</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="Helper Scripts">
+      <script>scripts\script_get_input.gml</script>
+    </scripts>
+    <scripts name="Entity Scripts">
+      <script>scripts\script_get_dir_facing.gml</script>
+      <scripts name="Player Scripts">
+        <script>scripts\script_move_state.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="Game Setup">
+      <script>scripts\script_game_setup.gml</script>
+    </scripts>
+  </scripts>
   <objects name="objects">
     <objects name="colliders">
       <object>objects\object_solid_parent_collider</object>
       <object>objects\object_water</object>
     </objects>
-    <object>objects\object_player</object>
     <object>objects\object_castle</object>
     <object>objects\object_portal</object>
     <object>objects\object_monster</object>
+    <objects name="Game Helpers">
+      <object>objects\object_game_manager</object>
+      <object>objects\object_input_manager</object>
+    </objects>
+    <objects name="Entities">
+      <objects name="Player">
+        <object>objects\object_player</object>
+      </objects>
+      <objects name="Monsters">
+        <object>objects\object_bat</object>
+      </objects>
+      <object>objects\object_parent_entity</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_world</room>
